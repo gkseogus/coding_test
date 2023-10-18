@@ -1,5 +1,3 @@
 def solution(my_string):
-    newL = []
-    for i in range(len(my_string)):
-        newL.append(my_string[i:])
-    return sorted(newL)
+    for idx, val in reversed(list(enumerate(my_string))):
+        print(my_string.endswith(my_string[idx]), my_string[idx])
